@@ -1,0 +1,118 @@
+Task 1:
+  Task name:
+    FizzBuzz Variation
+
+  Goal:
+    Write a function that prints numbers from 1 to 50:
+    If divisible by 3, print "Fizz"
+    If divisible by 5, print "Buzz"
+    If divisible by both, print "FizzBuzz"
+    Else print the number
+  
+  Sample Output:
+    1
+    2
+    Fizz
+    4
+    Buzz
+    Fizz
+    ...
+
+-------------------------------------
+
+
+Task 2:
+  Task name: 
+    Longest Substring Without Repeating Characters
+
+  Goal:
+    Given a string, return the length of the longest substring without repeating characters.
+
+  Sample Output:
+    Input:  "abcabcbb"
+    Output: 3  // "abc"
+
+-------------------------------------
+
+
+Task 3:
+  Task name:
+    Bank Account System
+
+  Goal:
+    Design a class BankAccount that represents a bank account with basic functionalities. Your BankAccount class should have the following features:
+  
+  Attributes:
+    account_number: A unique identifier for the account (integer).
+    account_holder_name: Name of the account holder (string).
+    balance: The current balance in the account (float).
+  
+  Methods:
+    deposit(amount): Add a specified amount to the balance.
+    withdraw(amount): Subtract a specified amount from the balance (if sufficient funds are available).
+    get_balance(): Return the current balance of the account.
+    get_account_info(): Return a string summarizing the account details (account number, account holder name, and balance).
+    
+  Additional Requirements:
+    Ensure that the withdraw method only allows withdrawal if the balance is sufficient.
+    Provide a constructor to initialize the account number, account holder name, and initial balance.
+  
+  Example:
+    Account Holder: John Doe
+    Account Number: 123456
+    Balance: 1000.50
+    
+    After Deposit: 200.00
+    New Balance: 1200.50
+    
+    After Withdrawal: 500.00
+    New Balance: 700.50
+
+-------------------------------------
+
+
+Task 4:
+  Task name:
+      Distributed Task Scheduler
+
+  Goal:
+    You need to implement a simple task scheduler that schedules tasks to run at a future timestamp and executes them accordingly. 
+    Your implementation should provide the following functionality:
+    Schedule a task
+      Input: Task ID (string), Execution time (Unix timestamp), Task description (string).
+      Store the task in a way that allows it to be executed at the right time.
+      Execute due tasks
+      A function that checks if there are any scheduled tasks that should run and executes them.
+      For simplicity, assume “execution” means printing the task description to the console.
+
+  Requirements:
+    The system should efficiently manage multiple scheduled tasks.
+    Tasks should be executed at approximately the correct scheduled time.
+    The solution should handle edge cases such as scheduling tasks in the past or adding multiple tasks at the same timestamp.
+
+  Example Usage:
+    scheduler = TaskScheduler()
+    scheduler.schedule_task("task1", 1714502400, "Backup database")  # Future timestamp
+    scheduler.schedule_task("task2", 1714502410, "Send report email")
+    # Later, when checking for due tasks
+    scheduler.execute_due_tasks()  
+    # Expected Output (when the correct timestamp is reached):
+    # Executing task: Backup database
+    # Executing task: Send report email
+
+-------------------------------------
+
+Task 5:
+  Task name:
+      Basic Data Manipulation and Querying
+
+  Goal:
+    You need to create a simple Library Management System database with three tables: Books, Authors, and Categories.
+      Create the schema for the three tables: Books, Authors, and Categories.
+      Insert sample data into the tables.
+    Query the database to get information based on the following requirements:
+      Retrieve all books published by a certain author.
+
+-------------------------------------
+GOOD LUCK!
+
