@@ -1,0 +1,96 @@
+Task 1:
+  Task name:
+    Simple Disk Usage Reporter
+
+  Scenario:
+    You want to monitor which directories in your home folder are taking up the most space.
+
+  Requirements:
+    Write a script disk_report.sh that:
+    Scans the current directory
+    Lists the top 5 largest subdirectories and their sizes
+    Saves the output to disk_report.txt
+
+-------------------------------------
+
+Task 2:
+  Task name: 
+    Install and Configure a Helm Chart for a Web Application
+
+  Scenario:
+    You are required to install a Helm chart for a pre-existing web application (e.g. WordPress) from the Helm Hub or Artifact Hub. 
+      
+  Requirements:
+    Find and install the WordPress chart (or another web application chart) from the Helm Hub.
+    Configure the chart's values.yaml to meet the following requirements:
+      Set WordPress username to admin.
+      Set WordPress password to admin_password.
+      Set WordPress email to admin@example.com.
+      Configure the database password to db_password.
+      Enable persistent storage for WordPress data (so data is not lost when the pod is recreated).
+    Deploy the Helm chart and verify that the application is running.
+
+-------------------------------------
+
+Task 3:
+  Task name:
+    Containerize a Python Flask App
+
+  Goal:
+    The app should be accessible on http://localhost:5001
+
+  Requirements:
+    Write a Dockerfile to containerize the app
+    Build the Docker image
+    Run the app in a container
+    
+  Code for the flask app:
+    # app.py
+      from flask import Flask
+      app = Flask(__name__)
+  
+      @app.route('/')
+      def home():
+          return "Hello from Nokia!"
+
+-------------------------------------
+
+Task 4:
+  Task name:
+    Simple Log Analyzer Tool
+
+  Scenario:
+    You work in a support team and receive log files daily. Each log file (.log) contains lines like:
+      [INFO] 2023-10-01 12:00:00 - System started
+      [WARNING] 2023-10-01 12:05:00 - High memory usage
+      [ERROR] 2023-10-01 12:10:00 - System crash
+      [INFO] 2023-10-01 12:15:00 - System recovered
+      [WARNING] 2023-10-01 12:20:00 - High CPU usage
+      [ERROR] 2023-10-01 12:25:00 - Disk failure
+
+  Requirements:
+    Build a Bash script called log_analyzer.sh that does the following:
+      Takes a log file name as an argument
+      If the file doesn't exist, show an error and exit
+      Extracts and counts the number of lines for each level
+      [ERROR], [WARNING], [INFO]
+      Outputs the counts to the console
+      Creates a separate file errors_only.log with just the [ERROR] lines
+
+-------------------------------------
+
+Task 5:
+  Task name:
+    Create a ConfigMap and Use It in a Pod
+
+  Goal:
+    Understand the configuration injection in K8s and print the variable values
+      echo $ENV
+      echo $DEBUG
+
+  Requirements:
+    Create a ConfigMap with 2 environment variables (e.g., ENV=dev, DEBUG=true)
+    Create a Pod using busybox that prints those environment variables and sleeps for 3600 seconds
+
+-------------------------------------
+GOOD LUCK!
