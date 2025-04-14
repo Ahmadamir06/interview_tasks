@@ -1,0 +1,118 @@
+Task 1:
+  Task name:
+    Test Case Writing for a Login Page
+
+  Scenario:
+    You are given a basic login form with the following fields:
+      Username (Text field)
+      Password (Password field)
+      Login button
+      "Remember Me" checkbox
+      "Forgot Password" link
+
+  Goal:
+    Write test cases 2 each (positive and negative) for this login functionality. 
+    The format should include:
+      Test Case ID
+      Test Case Description
+      Pre-conditions
+      Test Steps
+      Expected Result
+
+-------------------------------------
+
+Task 2:
+  Task name: 
+    Bug Reporting from an E-Commerce Flow (Exploratory)
+
+  Scenario:
+    You are provided with a test version of a sample e-commerce website (or a prototype UI mockup). 
+    Key pages include:
+      Product listing
+      Product detail
+      Add to cart
+      Checkout page
+      
+  Goal:
+    Explore the site freely and:
+      Identify at least 5 UI/UX or functional bugs
+      Report them in a proper bug report format, including:
+        Bug ID
+        Title
+        Severity
+        Steps to Reproduce
+        Expected vs Actual Result
+
+  Website_to_test: https://automationexercise.com/
+
+-------------------------------------
+
+Task 3:
+  Task name:
+    API Test for a Public API
+
+  Scenario:
+    Use the public API:
+        https://jsonplaceholder.typicode.com/posts
+
+  Goal:
+    Write a script to GET all posts from the public API.
+    Verify that:
+      Status code is 200
+      The response is a list of post objects
+      The first post has an "id" of 1
+      Bonus:
+        Create a POST request to create a new post
+        Validate response (status code 201, content returned)
+  
+
+-------------------------------------
+
+Task 4:
+  Task name:
+      Write Unit Tests for a Utility Class
+
+  Scenario:
+    You're given a small utility class that handles basic string processing. Your job is to write unit tests for all the methods in it.
+    Code_to_test:
+      class StringUtils:
+        def is_palindrome(self, text):
+            text = text.lower().replace(" ", "")
+            return text == text[::-1]
+    
+        def count_vowels(self, text):
+            return sum(1 for char in text.lower() if char in 'aeiou')
+    
+        def reverse_words(self, sentence):
+            return ' '.join(word[::-1] for word in sentence.split())
+  
+    Goal:
+      Create a separate test file and write unit tests for each method:
+        is_palindrome(text)
+        count_vowels(text)
+        reverse_words(sentence)
+        Use unittest or pytest (if you're testing in Python). If in Java, use JUnit.
+        Bonus:
+          Aim for 100% code coverage
+
+-------------------------------------
+
+Task 5:
+  Task name:
+    Automate the Login and Search Functionality of a Web App using robot framework
+
+  Goal:
+    Open the homepage
+    Navigate to the Login page
+    Enter valid credentials (create a test account manually beforehand)
+    Click the login button and verify successful login
+    Navigate back to the homepage
+    Use the search bar to look up a product (e.g., "jeans")
+    Verify that the search results contain relevant items
+    Log out
+    
+ Website_to_test: https://automationexercise.com/
+
+-------------------------------------
+GOOD LUCK!
+
