@@ -10,7 +10,7 @@
 
 #get requirements from requirements.txt
 # use flask --app webapp run 
-# only post available due to time constraints
+# only get available 
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
