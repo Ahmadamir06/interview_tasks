@@ -1,0 +1,4 @@
+task 1
+First I ran du command with -sh and got all the folders in the directory.
+Then I sorted them by size, then filtered the top 5 folders.
+This was echoed to the wanted file

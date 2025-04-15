@@ -1,0 +1,10 @@
+First, check that the file exists.
+Then grep for Info, warnings and errors separately, and count the results with wc -l to get only the lines (messed around a bit with read line, but grep is much easier)
+This so that if we have [INFO] [INFO] something, we don't count it twice.
+Echo results to terminal for user.
+Grep errors again and pipe them to errors_only.log for later analysis.
+
+If the file is not found, notify the user and don't try to grep the file.
+
+For this to be more efficient, maybe we could grep errors into the file and count them at the same time.
+However, i don't know how to do this, or if it's possible

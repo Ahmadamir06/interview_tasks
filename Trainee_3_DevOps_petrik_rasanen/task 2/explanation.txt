@@ -1,0 +1,19 @@
+task 2
+First pulled wordpress chart, to be able to make changes locally and save them, as well as installed bitnami repositoru
+Made following changes to the main values.yaml:
+changed in image:
+wordpressUsername to admin
+wordpressPassword to admin_password
+wordpressEmail to admin@example.com
+
+For database:
+Changed mariadb password to db_password in mariadb: auth: password
+Checked that persistence was true in mariadb config. 
+
+With this changes, I believe that it should reflect the requirements. 
+However, this is my first time using helm, so I'm not certain, if I should have changed some settings to perhaps enable mariadb.
+I believe not, but I'm not certain.
+Started application with helm install bitnami/wordpress --values wordpress/values.yaml
+I have not tested this, as I don't know how to deploy a local helm chart. 
+I tried with command helm install wordpress --values /path/values.yaml, but got error about non-absolute URLs.
+This is due to me never having done anything with helm before

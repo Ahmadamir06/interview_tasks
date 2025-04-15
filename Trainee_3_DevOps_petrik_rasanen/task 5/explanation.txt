@@ -1,0 +1,9 @@
+Task 5
+All is in pod folder.
+First, I created config.yaml, and marked the wanted variables there (default config from interent)
+Kubectl threw error about the boolean on debug. When I changed it to be string, it worked. 
+    I don't know why this is, I learned about kubernetes literaly yesterday.
+Then I created the config for Kubectl.
+Then I created pod.yaml for the busybox pod, default config  lifted from internet.
+For Envs, pulled the wanted variables from config and named them properly.
+Then changed the startup command to echo env and debug variables to the pod logs. Lastly added command to sleep 3600s.

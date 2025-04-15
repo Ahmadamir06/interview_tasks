@@ -1,0 +1,6 @@
+App.py needed to be started, so I added such code. Without it app.py ran, but didn't stay running. We want it to run at port 5001, so that was inputted to the run command.
+Then I created Dockerfile from python, installed flask, exposed 5001 and built the container. 
+In proper deployment I would recommend requirements.txt to autoinstall all the needed libraries, but I didin't do that here to save time and because we only use one library.
+Then I started the container using Docker, opened port 5001, and made a request to check. 
+Didn't work, I suspected that the problem was that flask wasn't running properly on localhost. This could be the result of a routing problems inside the container.
+Inputted 0.0.0.0 to run script in localhost and have it accessable by devices in network, and rebuilt image. Then it worked.
