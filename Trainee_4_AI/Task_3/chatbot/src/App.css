@@ -1,0 +1,10 @@
+.main {
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.button {
+    margin-top: 25rem;
+}
