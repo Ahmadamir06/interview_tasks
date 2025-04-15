@@ -1,6 +1,5 @@
 Task 1:
-  Task name:
-    Test Case Writing for a Login Page
+  Task name: Test Case Writing for a Login Page
 
   Scenario:
     You are given a basic login form with the following fields:
@@ -22,8 +21,7 @@ Task 1:
 -------------------------------------
 
 Task 2:
-  Task name: 
-    Bug Reporting from an E-Commerce Flow (Exploratory)
+  Task name: Bug Reporting from an E-Commerce Flow (Exploratory)
 
   Scenario:
     You are provided with a test version of a sample e-commerce website (or a prototype UI mockup). 
@@ -48,8 +46,7 @@ Task 2:
 -------------------------------------
 
 Task 3:
-  Task name:
-    API Test for a Public API
+  Task name: API Test for a Public API
 
   Scenario:
     Use the public API:
@@ -69,8 +66,7 @@ Task 3:
 -------------------------------------
 
 Task 4:
-  Task name:
-      Write Unit Tests for a Utility Class
+  Task name: Write Unit Tests for a Utility Class
 
   Scenario:
     You're given a small utility class that handles basic string processing. Your job is to write unit tests for all the methods in it.
@@ -98,8 +94,7 @@ Task 4:
 -------------------------------------
 
 Task 5:
-  Task name:
-    Automate the Login and Search Functionality of a Web App using robot framework
+  Task name: Automate the Login and Search Functionality of a Web App using robot framework
 
   Goal:
     Open the homepage
