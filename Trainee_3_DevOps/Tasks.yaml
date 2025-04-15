@@ -1,6 +1,5 @@
 Task 1:
-  Task name:
-    Simple Disk Usage Reporter
+  Task name: Simple Disk Usage Reporter
 
   Scenario:
     You want to monitor which directories in your home folder are taking up the most space.
@@ -14,8 +13,7 @@ Task 1:
 -------------------------------------
 
 Task 2:
-  Task name: 
-    Install and Configure a Helm Chart for a Web Application
+  Task name: Install and Configure a Helm Chart for a Web Application
 
   Scenario:
     You are required to install a Helm chart for a pre-existing web application (e.g. WordPress) from the Helm Hub or Artifact Hub. 
@@ -33,8 +31,7 @@ Task 2:
 -------------------------------------
 
 Task 3:
-  Task name:
-    Containerize a Python Flask App
+  Task name: Containerize a Python Flask App
 
   Goal:
     The app should be accessible on http://localhost:5001
@@ -56,8 +53,7 @@ Task 3:
 -------------------------------------
 
 Task 4:
-  Task name:
-    Simple Log Analyzer Tool
+  Task name: Simple Log Analyzer Tool
 
   Scenario:
     You work in a support team and receive log files daily. Each log file (.log) contains lines like:
@@ -80,8 +76,7 @@ Task 4:
 -------------------------------------
 
 Task 5:
-  Task name:
-    Create a ConfigMap and Use It in a Pod
+  Task name: Create a ConfigMap and Use It in a Pod
 
   Goal:
     Understand the configuration injection in K8s and print the variable values
