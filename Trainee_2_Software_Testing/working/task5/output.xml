@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-15T12:32:25.440756" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="D:\Github\Nokia\interview_tasks\Trainee_2_Software_Testing\working\task5\test.robot">
+<test id="s1-t1" name="Login and Search" line="20">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-15T12:32:25.656966" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\Github\\Nokia\\interview_tasks\\Trainee_2_Software_Testing\\working\\task5\\browser\\traces\\temp\\e0919d87-cb80-48c3-928d-137066dc1345"}</msg>
+<msg time="2025-04-15T12:32:25.679258" level="INFO">Starting Browser process C:\Users\ahsan\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 55290</msg>
+<msg time="2025-04-15T12:32:25.679381" level="INFO">Node startup parameters: ['node', 'C:\\Users\\ahsan\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '55290']</msg>
+<msg time="2025-04-15T12:32:26.872407" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\Github\\Nokia\\interview_tasks\\Trainee_2_Software_Testing\\working\\task5\\browser\\traces\\temp\\e0919d87-cb80-48c3-928d-137066dc1345"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-15T12:32:25.656205" elapsed="1.216469"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-04-15T12:32:26.877498" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  }
+}</msg>
+<msg time="2025-04-15T12:32:26.897203" level="INFO">Successfully created context. </msg>
+<msg time="2025-04-15T12:32:26.897319" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1920, 'height': 1080}}</msg>
+<arg>viewport={"width": 1920, "height": 1080}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-04-15T12:32:26.873554" elapsed="0.023908"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-15T12:32:29.154561" level="INFO">Successfully initialized new page object and opened url: https://automationexercise.com</msg>
+<arg>url=${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-15T12:32:26.897952" elapsed="2.256800"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-15T12:32:29.155849" level="INFO">Clicks the element 'button[class~="fc-cta-consent"]'.</msg>
+<arg>selector=${concent field}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:29.155244" elapsed="0.110556"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-15T12:32:29.702100" level="INFO">Successfully opened URL https://automationexercise.com/login</msg>
+<arg>url=${URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-15T12:32:29.266345" elapsed="0.435932"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-15T12:32:29.703432" level="INFO">Fills the text 'example@dummy.com' in the given field.</msg>
+<arg>selector=${email field}</arg>
+<arg>txt=${USER_EMAIL}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:29.702739" elapsed="0.052482"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-15T12:32:29.756430" level="INFO">Fills the text '1' in the given field.</msg>
+<arg>selector=${password field}</arg>
+<arg>txt=${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:29.755606" elapsed="0.017591"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-15T12:32:29.774303" level="INFO">Clicks the element 'button[data-qa="login-button"]'.</msg>
+<arg>selector=${login button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:29.773553" elapsed="0.646189"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-15T12:32:31.882769" level="INFO">Successfully opened URL https://automationexercise.com/products</msg>
+<arg>url=${URL}/products</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-15T12:32:30.420168" elapsed="1.462923"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-04-15T12:32:31.884979" level="INFO">Fills the text 'jeans' in the given field.</msg>
+<arg>selector=${search field}</arg>
+<arg>txt=${Search Text}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:31.883873" elapsed="0.067360"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-04-15T12:32:31.952760" level="INFO">Clicks the element 'button[id=submit_search]'.</msg>
+<arg>selector=${search btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:31.951779" elapsed="0.356276"/>
+</kw>
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-04-15T12:32:32.347219" level="INFO">Found locator('div[class=single-products]').locator('text=jeans').first(),locator('div[class=single-products]').locator('text=jeans').nth(1),locator('div[class=single-products]').locator('text=jeans').nth(2),locator('div[class=single-products]').locator('text=jeans').nth(3),locator('div[class=single-products]').locator('text=jeans').nth(4),locator('div[class=single-products]').locator('text=jeans').nth(5) Locators successfully.</msg>
+<msg time="2025-04-15T12:32:32.347434" level="INFO">${products} = ['div[class=single-products] &gt;&gt; text=jeans &gt;&gt; nth=0', 'div[class=single-products] &gt;&gt; text=jeans &gt;&gt; nth=1', 'div[class=single-products] &gt;&gt; text=jeans &gt;&gt; nth=2', 'div[class=single-products] &gt;&gt; text=jean...</msg>
+<var>${products}</var>
+<arg>${products selector} &gt;&gt; text=${Search Text}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-04-15T12:32:32.308424" elapsed="0.039054"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-04-15T12:32:32.348493" level="INFO">Length is 6.</msg>
+<arg>${products}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-04-15T12:32:32.348093" elapsed="0.000476"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2025-04-15T12:32:33.193503" level="INFO">Successfully opened URL https://automationexercise.com/logout</msg>
+<arg>url=${URL}/logout</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2025-04-15T12:32:32.348845" elapsed="0.844872"/>
+</kw>
+<msg time="2025-04-15T12:32:33.198017" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-04-15T12:32:33.222590" level="INFO">Switching context to context=45f261b7-89ef-4e36-8fa9-8692f2499599 in CURRENT</msg>
+<msg time="2025-04-15T12:32:33.243765" level="INFO">Successfully changed active context: context=45f261b7-89ef-4e36-8fa9-8692f2499599</msg>
+<msg time="2025-04-15T12:32:33.256811" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-04-15T12:32:25.655293" elapsed="7.539076"/>
+</test>
+<status status="PASS" start="2025-04-15T12:32:25.442201" elapsed="7.816521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

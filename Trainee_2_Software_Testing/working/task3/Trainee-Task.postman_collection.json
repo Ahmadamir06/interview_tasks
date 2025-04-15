@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "22c7915d-afd5-4bbd-8521-0a6b49b0e08a",
+		"name": "Trainee-Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44013709",
+		"_collection_link": "https://www.postman.com/ahsanabbas-9680633/workspace/freecodecamp/collection/44013709-22c7915d-afd5-4bbd-8521-0a6b49b0e08a?action=share&source=collection_link&creator=44013709"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Response status is 200', () => {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"let json;\r",
+							"const schema = {\r",
+							"    \"type\": \"array\",\r",
+							"    \"items\": JSON.parse(pm.collectionVariables.get('POST_SCHEMA'))\r",
+							"}\r",
+							"\r",
+							"pm.test('Response is json with valid schema', () => {\r",
+							"    json = pm.response.toJSON();\r",
+							"    pm.response.to.have.jsonSchema(schema);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const schema = {\r",
+							"    \"type\": \"object\",\r",
+							"    \"properties\": {\r",
+							"        \"userId\": { \"type\": \"number\", \"multipleOf\": 1, \"minimum\": 0 },\r",
+							"        \"id\":  { \"type\": \"number\", \"multipleOf\": 1, \"minimum\": 0 },\r",
+							"        \"title\": { \"type\": \"string\", \"minLength\": 3 },\r",
+							"        \"body\": { \"type\": \"string\",  \"minLength\": 3 }\r",
+							"    },\r",
+							"    \"required\": [\"userId\", \"id\", \"title\", \"body\"]\r",
+							"}\r",
+							"pm.collectionVariables.set('POST_SCHEMA', JSON.stringify(schema));\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Response is 201', () => {\r",
+							"    pm.response.to.have.status(201);\r",
+							"})\r",
+							"\r",
+							"let body;\r",
+							"pm.test('Response is json with valid schema', () => {\r",
+							"    pm.response.to.have.jsonBody();\r",
+							"    const schema = JSON.parse(pm.collectionVariables.get('POST_SCHEMA'))\r",
+							"    pm.response.to.have.jsonSchema(schema);\r",
+							"})"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 2,\r\n    \"id\": 200,\r\n    \"title\": \"at nam consequatur ea labore ea harum\",\r\n    \"body\": \"cupiditate quo est a modi nesciunt soluta\\nipsa voluptas error itaque dicta in\\nautem qui minus magnam et distinctio eum\\naccusamus ratione error aut\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/posts",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": " jsonplaceholder.typicode.com",
+			"type": "string"
+		},
+		{
+			"key": "POST_SCHEMA",
+			"value": ""
+		}
+	]
+}
