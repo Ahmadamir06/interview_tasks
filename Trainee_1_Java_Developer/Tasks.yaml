@@ -1,6 +1,5 @@
 Task 1:
-  Task name:
-    FizzBuzz Variation
+  Task name: FizzBuzz Variation
 
   Goal:
     Write a function that prints numbers from 1 to 50:
@@ -22,8 +21,7 @@ Task 1:
 
 
 Task 2:
-  Task name: 
-    Longest Substring Without Repeating Characters
+  Task name: Longest Substring Without Repeating Characters
 
   Goal:
     Given a string, return the length of the longest substring without repeating characters.
@@ -36,8 +34,7 @@ Task 2:
 
 
 Task 3:
-  Task name:
-    Bank Account System
+  Task name: Bank Account System
 
   Goal:
     Design a class BankAccount that represents a bank account with basic functionalities. Your BankAccount class should have the following features:
@@ -72,8 +69,7 @@ Task 3:
 
 
 Task 4:
-  Task name:
-      Distributed Task Scheduler
+  Task name: Distributed Task Scheduler
 
   Goal:
     You need to implement a simple task scheduler that schedules tasks to run at a future timestamp and executes them accordingly. 
@@ -103,8 +99,7 @@ Task 4:
 -------------------------------------
 
 Task 5:
-  Task name:
-      Basic Data Manipulation and Querying
+  Task name: Basic Data Manipulation and Querying
 
   Goal:
     You need to create a simple Library Management System database with three tables: Books, Authors, and Categories.
