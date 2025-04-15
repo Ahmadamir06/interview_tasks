@@ -6,6 +6,11 @@
 #ok i have a working handler, i just need to set up the post handler to call the llm_call function and store and show the messages to the user
 # i have to remeber to write down the usage instructions and add .env to the .gitignore file
 # having problems with the flask/django html form not working so ill just have leave that out
+# 5 minutes left now, so ill finish up
+
+#get requirements from requirements.txt
+# use flask --app webapp run 
+# only post available due to time constraints
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
