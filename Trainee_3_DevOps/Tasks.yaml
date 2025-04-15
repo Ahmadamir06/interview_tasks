@@ -6,9 +6,9 @@ Task 1:
 
   Requirements:
     Write a script disk_report.sh that:
-    Scans the current directory
-    Lists the top 5 largest subdirectories and their sizes
-    Saves the output to disk_report.txt
+      Scans the current directory
+      Lists the top 5 largest subdirectories and their sizes
+      Saves the output to disk_report.txt
 
 -------------------------------------
 
